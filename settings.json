@@ -1,6 +1,8 @@
 {
   "token": "TOKEN",
-  "prefix": "/",
-  "thehouseguildid": "319618947894738961",
-  "ownerid": "126119057232625664"
-}
+  	"prefix": "/",
+ 	"thehouseguildid": "319618947894738961",
+  	"ownerid": "126119057232625664",
+  	"modrolename": "Staff",
+  	"adminrolename": "Directors"
+} 
