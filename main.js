@@ -54,9 +54,14 @@ client.elevation = message => {
   if (mod_role && message.member.roles.has(mod_role.id)) permlvl = 2;
   let admin_role = message.guild.roles.find('name', settings.adminrolename);
   if (admin_role && message.member.roles.has(admin_role.id)) permlvl = 3;
-  if (message.author.id === settings.ownerid) permlvl = 4;
+  if (isOwner(message.author.id)) permlvl = 4;
   return permlvl;
 };
 
+
+function isOwner(id) {
+      var ownerids = settings.ownerid
+  return (ownerids.indexOf(id) > -1);
+}
 
 client.login(settings.token)
